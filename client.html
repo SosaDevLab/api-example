@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #quote-holder {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="quote-holder"></p>
+    <button onclick="getRandomQuote()">Get Random Quote</button>
+
+    <script>
+        function getRandomQuote() {
+            fetch("http://127.0.0.1:8000/")
+                .then((response) => response.json())
+                .then((data) => {
+                    const quoteHolder = document.getElementById("quote-holder");
+                    quoteHolder.textContent = data.quote;
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        }
+    </script>
+</body>
+
+</html>
