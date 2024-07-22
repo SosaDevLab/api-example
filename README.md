@@ -46,6 +46,6 @@ python api.py
 Y para el cliente debes ir al navegador y escribir la siguiente URL:
 
 ```bash
-http://{la-ruta-de-tu-archivo}/client.html
-# Ejemplo http://Repos/youtube/client.html
+{la-ruta-de-tu-archivo}/client.html
+# Ejemplo /home/soos/Repos/youtube/api-example/client.html
 ```
