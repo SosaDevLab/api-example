@@ -6,8 +6,6 @@
 
 ## Preparación del entorno
 
-> **Nota:** El paso a paso de todas maneras lo iré explicando en el video.
-
 Para poder seguir este tutorial necesitas tener instalado Python y algun editor de texto. En mi caso voy a usar Visual Studio Code.
 
 ### Instalación de Python
@@ -20,16 +18,14 @@ Para instalar Visual Studio Code debes instalarlo desde la página oficial de Vi
 
 ## Cómo ejecutar el programa
 
-> **Nota:** El paso a paso de todas maneras lo iré explicando en el video.
-
-Para ejecutar el programa debes abrir una terminal y ejecutar el siguiente comando:
+Para ejecutar el programa debes abrir una terminal y ejecutar los siguientes comandos:
 
 ```bash
 git clone https://github.com/SosaDevLab/api-example.git
 cd api-example
 ```
 
-Luego debes ejecutar el siguiente comando:
+Luego debes ejecutar los siguientes comandos:
 
 ```bash
 python -m venv venv
